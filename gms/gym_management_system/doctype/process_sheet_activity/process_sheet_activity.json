@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-07 12:43:22.505957",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "day",
+  "activity",
+  "target_count",
+  "target_duration",
+  "obtained_count",
+  "obtained_duration"
+ ],
+ "fields": [
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Day",
+   "options": "Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity"
+  },
+  {
+   "default": "0",
+   "fieldname": "target_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target Count",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "target_duration",
+   "fieldtype": "Duration",
+   "in_list_view": 1,
+   "label": "Target Duration"
+  },
+  {
+   "fieldname": "obtained_count",
+   "fieldtype": "Int",
+   "label": "Obtained Count"
+  },
+  {
+   "fieldname": "obtained_duration",
+   "fieldtype": "Data",
+   "label": "Obtained Duration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-07 12:48:24.022254",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Process Sheet Activity",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

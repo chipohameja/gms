@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:locker_name",
+ "creation": "2023-02-05 13:50:11.079332",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "locker_name",
+  "booked",
+  "booked_by",
+  "enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker_name",
+   "fieldtype": "Data",
+   "label": "Locker Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "booked",
+   "fieldtype": "Data",
+   "label": "Booked"
+  },
+  {
+   "fieldname": "booked_by",
+   "fieldtype": "Link",
+   "label": "Booked by",
+   "options": "Gym Member"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-28 20:46:00.188188",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Locker",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,291 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-20 00:19:32.486627",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "gym_name",
+  "open",
+  "reason_closed",
+  "schedule_tab",
+  "monday_section",
+  "monday",
+  "monday_from",
+  "monday_to",
+  "column_break_7",
+  "tuesday_section",
+  "tuesday",
+  "tuesday_from",
+  "tuesday_to",
+  "section_break_11",
+  "wednesday_header",
+  "wednesday",
+  "wednesday_from",
+  "wednesday_to",
+  "column_break_16",
+  "thursday_header",
+  "thursday",
+  "thursday_from",
+  "thursday_to",
+  "section_break_25",
+  "friday_header",
+  "friday",
+  "friday_from",
+  "friday_to",
+  "column_break_30",
+  "html_31",
+  "saturday",
+  "saturday_from",
+  "saturday_to",
+  "section_break_35",
+  "html_36",
+  "sunday",
+  "sunday_from",
+  "sunday_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "schedule_tab",
+   "fieldtype": "Tab Break",
+   "label": "Schedule"
+  },
+  {
+   "collapsible": 1,
+   "default": "0",
+   "fieldname": "monday_section",
+   "fieldtype": "HTML",
+   "label": "Monday",
+   "options": "<h2>Monday</h2>"
+  },
+  {
+   "fieldname": "monday_from",
+   "fieldtype": "Time",
+   "label": "From",
+   "width": "15px"
+  },
+  {
+   "fieldname": "monday_to",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "default": "0",
+   "fieldname": "monday",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "fieldname": "tuesday_section",
+   "fieldtype": "HTML",
+   "label": "Tuesday",
+   "options": "<h2>Tuesday</h2>"
+  },
+  {
+   "default": "0",
+   "fieldname": "tuesday",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "fieldname": "tuesday_from",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "tuesday_to",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wednesday_header",
+   "fieldtype": "HTML",
+   "label": "Wednesday",
+   "options": "<h2>Wednesday</h2>"
+  },
+  {
+   "default": "0",
+   "fieldname": "wednesday",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "fieldname": "wednesday_from",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "wednesday_to",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thursday_header",
+   "fieldtype": "HTML",
+   "label": "Thursday",
+   "options": "<h2>Thursday</h2>"
+  },
+  {
+   "default": "0",
+   "fieldname": "thursday",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "fieldname": "thursday_from",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "thursday_to",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "gym_name",
+   "fieldtype": "Data",
+   "label": "Gym Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "open",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "depends_on": "eval:doc.open == 0;",
+   "fieldname": "reason_closed",
+   "fieldtype": "Data",
+   "label": "Reason Closed"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "friday",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "fieldname": "friday_header",
+   "fieldtype": "HTML",
+   "label": "Friday",
+   "options": "<h2>Friday</h2>"
+  },
+  {
+   "fieldname": "friday_from",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "friday_to",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "saturday",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "fieldname": "html_31",
+   "fieldtype": "HTML",
+   "options": "<h2>Saturday</h2>"
+  },
+  {
+   "fieldname": "saturday_from",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "saturday_to",
+   "fieldtype": "Data",
+   "label": "To"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_36",
+   "fieldtype": "HTML",
+   "options": "<h2>Sunday</h2>"
+  },
+  {
+   "default": "0",
+   "fieldname": "sunday",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "fieldname": "sunday_from",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "sunday_to",
+   "fieldtype": "Time",
+   "label": "To"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-02-05 14:42:53.599893",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
